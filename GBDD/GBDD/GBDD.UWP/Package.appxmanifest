@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="4cc23f5b-6950-4c85-8494-65a110401ebe"
-    Publisher="CN=b308753e-913b-4ee2-bc05-2d2f7dc76460"
+    Name="9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12"
+    Publisher="CN=f034a3b3-343a-4941-a9ca-bc7929cb1079"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>GBDD.UWP</DisplayName>
-    <PublisherDisplayName>b308753e-913b-4ee2-bc05-2d2f7dc76460</PublisherDisplayName>
+    <PublisherDisplayName>f034a3b3-343a-4941-a9ca-bc7929cb1079</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

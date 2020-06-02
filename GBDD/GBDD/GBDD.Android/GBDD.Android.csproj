@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B1E9278-7C9D-4F5F-A937-2E6D90D398F0}</ProjectGuid>
+    <ProjectGuid>{548C1AF2-0D7D-4B00-A49F-4DEC4D194FC0}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GBDD\GBDD.csproj">
-      <Project>{A65177C4-00C2-4885-A77A-D01F3CD78889}</Project>
+      <Project>{61C25E59-0C3A-4AC0-9BF7-C45F443165AB}</Project>
       <Name>GBDD</Name>
     </ProjectReference>
   </ItemGroup>

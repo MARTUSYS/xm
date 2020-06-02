@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{A17FFB78-07F3-4F31-A473-F54CFA43AC3E}</ProjectGuid>
+    <ProjectGuid>{B9F97E1A-7604-4B63-B38D-97CA94943146}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GBDD.UWP</RootNamespace>
@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GBDD\GBDD.csproj">
-      <Project>{A65177C4-00C2-4885-A77A-D01F3CD78889}</Project>
+      <Project>{61C25E59-0C3A-4AC0-9BF7-C45F443165AB}</Project>
       <Name>GBDD</Name>
     </ProjectReference>
   </ItemGroup>
