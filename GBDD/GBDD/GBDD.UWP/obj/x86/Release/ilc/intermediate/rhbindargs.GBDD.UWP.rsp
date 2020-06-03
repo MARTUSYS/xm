@@ -1,0 +1,16 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\Max\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\tools\x86\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Release\ilc\intermediate\MDIL\GBDD.UWP.mdilexe"
+"/i:E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Release\ilc\intermediate\MDIL"
+"/out:E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Release\ilc\intermediate\Native\GBDD.UWP.exe"
+"/pdbAltPath:E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Release\ilc"
+"/res:E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Release\ilc\intermediate\Native.res"
+"/i:C:\Users\Max\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

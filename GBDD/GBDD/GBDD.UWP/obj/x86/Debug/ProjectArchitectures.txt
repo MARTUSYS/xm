@@ -1,0 +1,1 @@
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\GBDD.UWP.csproj;x86

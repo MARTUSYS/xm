@@ -1,0 +1,14 @@
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\bin\Debug\netstandard2.0\GBDD.deps.json
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\bin\Debug\netstandard2.0\GBDD.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\bin\Debug\netstandard2.0\ref\GBDD.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\bin\Debug\netstandard2.0\GBDD.pdb
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.csprojAssemblyReference.cache
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.AssemblyInfoInputs.cache
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.AssemblyInfo.cs
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.csproj.CoreCompileInputs.cache
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\ref\GBDD.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.pdb
