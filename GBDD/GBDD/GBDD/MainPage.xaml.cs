@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,11 @@ namespace GBDD
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void Add_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new All());
         }
     }
 }
