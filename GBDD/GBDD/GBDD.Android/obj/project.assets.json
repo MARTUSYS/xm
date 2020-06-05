@@ -882,7 +882,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.800"
+          "Xamarin.Forms": "4.6.0.800",
+          "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
           "bin/placeholder/GBDD.dll": {}
