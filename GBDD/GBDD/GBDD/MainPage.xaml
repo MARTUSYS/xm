@@ -4,11 +4,42 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="GBDD.MainPage">
+             x:Class="GBDD.MainPage"
+             Title="Profiles">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Clicked="OnNoteAddedClicked" />
+    </ContentPage.ToolbarItems>
     <StackLayout>
-        <!-- Place new controls here -->
-        <Button x:Name="Add" Text="Pereh" Clicked="Add_Clicked"/>
+        <ListView x:Name="listView"
+                  Margin="20">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Last_name}"
+                              Detail="{Binding First_name}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Button Text="Edit" Clicked="RemoveItem"/>
+            <Button 
+                Grid.Column="1"
+                Text="Delete"
+                Clicked="DeleteItem"
+                />
+        </Grid>
+        <Button 
+            Text="Сontinue"
+            />
     </StackLayout>
+
 
 </ContentPage>

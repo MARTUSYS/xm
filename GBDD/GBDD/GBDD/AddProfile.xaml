@@ -4,12 +4,48 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="GBDD.AddProfile">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="GBDD.AddProfile"
+             Title="Add/Edit Profile">
+
+    <StackLayout Margin="20">
+        <TableView Intent="Data">
+            <TableView.Root>
+                <TableRoot>
+                    <TableSection>
+
+                        <TextCell Text="Where it is addressed"/>
+                        <EntryCell Label="Region" Keyboard="Text" Text="{Binding Region}"/>
+                        <EntryCell Label="Subdivision" Keyboard="Text" Text="{Binding Subdivision}"/>
+                        <EntryCell Label="Position" Keyboard="Text" Text="{Binding Position}"/>
+                        <EntryCell Label="Full name" Keyboard="Text" Text="{Binding Full_name}"/>
+                        
+                        <TextCell Text="General information"/>
+                        <EntryCell Label="Last name" Keyboard="Text" Text="{Binding Last_name}"/>
+                        <EntryCell Label="First name" Keyboard="Text" Text="{Binding First_name}"/>
+                        <EntryCell Label="Patronymic" Keyboard="Text" Text="{Binding Patronymic}"/>
+                        <EntryCell Label="Email" Keyboard="Email" Text="{Binding Email}"/>
+                        <EntryCell Label="Phone" Keyboard="Telephone" Text="{Binding Phone}"/>
+                        <EntryCell Label="Event Location (Region)" Keyboard="Text" Text="{Binding Event_location}"/>
+                        
+                        <TextCell Text="For organization"/>
+                        <SwitchCell x:Name="SwitchCell" Text="Organization" On="{Binding Organization}"/>
+                        <EntryCell Label="Name of company" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}" Keyboard="Text" Text="{Binding Name_of_company}" />
+                        <EntryCell Label="Additional information" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}" Keyboard="Text" Text="{x:Binding Additional_information}" />
+                        
+                    </TableSection>
+                </TableRoot>
+            </TableView.Root>
+        </TableView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save" 
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete" 
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
 </ContentPage>

@@ -15,3 +15,5 @@ E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\AddingPhotos.xam
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\AddProfile.xaml.g.cs
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\All.xaml.g.cs
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\ProfileSelection.xaml.g.cs
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.csproj.CoreCompileInputs.cache
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\XamlC.stamp
