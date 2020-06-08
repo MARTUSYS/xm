@@ -28,9 +28,12 @@ namespace GBDD
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
         {
+            DBModel prof = new DBModel();
+            prof.date_of_registration_of_the_document_in_the_organization = DateTime.UtcNow;
+            prof.First_name = "";
             await Navigation.PushAsync(new AddProfile
             {
-                BindingContext = new DBModel()
+                BindingContext = prof
             });
         }
 
@@ -57,7 +60,22 @@ namespace GBDD
             }
         }
 
+        async void ButtonItemCliced(object sender, EventArgs e)
+        {
+            DBModel prof = listView.SelectedItem as DBModel;
+            if (prof != null)
+            {
+                await Navigation.PushAsync(new Appeal
+                {
+                    BindingContext = prof
+                });
+            }
+        }
+
         /*
+
+                            <TextCell Text="{Binding Last_name, StringFormat='{0}'}"
+                              Detail="{Binding First_name}" />
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {

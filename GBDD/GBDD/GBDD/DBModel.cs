@@ -25,6 +25,10 @@ namespace GBDD
         public bool Organization { get; set; }
         public string Name_of_company { get; set; }
         public string Additional_information { get; set; }
+        public Int64 Outgoing_number { get; set; }
+        public DateTime date_of_registration_of_the_document_in_the_organization { get; set; }
+        public Int64 Registered_Mail_Number { get; set; }
+        public string DataNull { get; set; }
         public DateTime Date { get; set; }
     }
 }

@@ -3,9 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GBDD"
              mc:Ignorable="d"
              x:Class="GBDD.AddProfile"
              Title="Add/Edit Profile">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ProfMultiTriggerConverter x:Key="dataHasBeenEntered" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
 
     <StackLayout Margin="20">
         <TableView Intent="Data">
@@ -13,25 +21,40 @@
                 <TableRoot>
                     <TableSection>
 
-                        <TextCell Text="Where it is addressed"/>
-                        <EntryCell Label="Region" Keyboard="Text" Text="{Binding Region}"/>
-                        <EntryCell Label="Subdivision" Keyboard="Text" Text="{Binding Subdivision}"/>
-                        <EntryCell Label="Position" Keyboard="Text" Text="{Binding Position}"/>
-                        <EntryCell Label="Full name" Keyboard="Text" Text="{Binding Full_name}"/>
-                        
                         <TextCell Text="General information"/>
-                        <EntryCell Label="Last name" Keyboard="Text" Text="{Binding Last_name}"/>
-                        <EntryCell Label="First name" Keyboard="Text" Text="{Binding First_name}"/>
+                        <EntryCell x:Name="EntryLast_name" Label="Last name *" Keyboard="Text" Text="{Binding Last_name}"/>
+                        <EntryCell x:Name="EntryFirst_name" Label="First name *" Keyboard="Text" Text="{Binding First_name}"/>
                         <EntryCell Label="Patronymic" Keyboard="Text" Text="{Binding Patronymic}"/>
-                        <EntryCell Label="Email" Keyboard="Email" Text="{Binding Email}"/>
+                        <EntryCell x:Name="EntryEmail" Label="Email *" Keyboard="Email" Text="{Binding Email}"/>
                         <EntryCell Label="Phone" Keyboard="Telephone" Text="{Binding Phone}"/>
                         <EntryCell Label="Event Location (Region)" Keyboard="Text" Text="{Binding Event_location}"/>
-                        
+
+                        <TextCell Text="Where it is addressed"/>
+                        <EntryCell x:Name="EntryRegion" Label="Region *" Keyboard="Text" Text="{Binding Region}"/>
+                        <EntryCell x:Name="EntrySubdivision" Label="Subdivision *" Keyboard="Text" Text="{Binding Subdivision}"/>
+                        <EntryCell Label="Position" Keyboard="Text" Text="{Binding Position}"/>
+                        <EntryCell Label="Full name" Keyboard="Text" Text="{Binding Full_name}"/>
+
                         <TextCell Text="For organization"/>
                         <SwitchCell x:Name="SwitchCell" Text="Organization" On="{Binding Organization}"/>
                         <EntryCell Label="Name of company" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}" Keyboard="Text" Text="{Binding Name_of_company}" />
                         <EntryCell Label="Additional information" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}" Keyboard="Text" Text="{x:Binding Additional_information}" />
-                        
+                        <EntryCell Label="Outgoing №" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}" Keyboard="Numeric" Text="{x:Binding Outgoing_number}" />
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="45" />
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0" Text="Date of registration of the document:" TextColor="Gray"/>
+                                <DatePicker Grid.Column="1" Date="{x:Binding date_of_registration_of_the_document_in_the_organization}" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}"/>
+                            </Grid>
+                        </ViewCell>
+                        <EntryCell Label="Registered mail №" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}" Keyboard="Numeric" Text="{x:Binding Registered_Mail_Number}" />
+
                     </TableSection>
                 </TableRoot>
             </TableView.Root>
@@ -41,8 +64,43 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+
             <Button Text="Save" 
-                    Clicked="OnSaveButtonClicked" />
+                    Clicked="OnSaveButtonClicked"
+                    IsEnabled="False">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference EntryLast_name},
+                                      Path=Text.Length,
+                                      Converter={StaticResource dataHasBeenEntered}}"
+                                  Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference EntryFirst_name},
+                                      Path=Text.Length,
+                                      Converter={StaticResource dataHasBeenEntered}}"
+                                  Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference EntryEmail},
+                                      Path=Text.Length,
+                                      Converter={StaticResource dataHasBeenEntered}}"
+                                  Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference EntryRegion},
+                                      Path=Text.Length,
+                                      Converter={StaticResource dataHasBeenEntered}}"
+                                  Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference EntrySubdivision},
+                                      Path=Text.Length,
+                                      Converter={StaticResource dataHasBeenEntered}}"
+                                  Value="true" />
+
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
+            
             <Button Grid.Column="1"
                     Text="Delete" 
                     Clicked="OnDeleteButtonClicked"/>

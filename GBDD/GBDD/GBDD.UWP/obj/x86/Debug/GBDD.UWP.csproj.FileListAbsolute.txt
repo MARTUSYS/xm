@@ -62,3 +62,9 @@ E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Debug\MultipleQualifiersPerDi
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Debug\ProjectArchitectures.txt
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160355180000000.json
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636884950160000000.json
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\SQLite-net.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\e_sqlite3.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll

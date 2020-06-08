@@ -16,8 +16,40 @@
                   Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Last_name}"
-                              Detail="{Binding First_name}" />
+
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+
+
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Last_name}" TextColor="Red"/>
+                                            <Span Text=" "/>
+                                            <Span Text="{Binding First_name}" TextColor="Red"/>
+                                            <Span Text=" "/>
+                                            <Span Text="{Binding Patronymic}" TextColor="Red"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Phone: " FontSize="Micro"/>
+                                            <Span Text="{Binding Phone}" FontSize="Micro"/>
+                                            <Span Text=", Name of company: " FontSize="Micro"/>
+                                            <Span Text="{Binding Name_of_company}" FontSize="Micro"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                    
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
@@ -27,7 +59,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
+                <RowDefinition Height="45" />
             </Grid.RowDefinitions>
             <Button Text="Edit" Clicked="RemoveItem"/>
             <Button 
@@ -37,7 +69,8 @@
                 />
         </Grid>
         <Button 
-            Text="Сontinue"
+            Text="Form appeal"
+            Clicked="ButtonItemCliced"
             />
     </StackLayout>
 

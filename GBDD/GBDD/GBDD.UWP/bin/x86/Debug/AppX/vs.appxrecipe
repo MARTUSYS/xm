@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>AD0EF35C5C1D7CBA02B23DAAC0C791E8986EB8B8B186034CA856688889D3E97A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C4A7A81BE87C521BE4286F7AA2E14D26F822F5E2C2C60A1093F5AB82BE92BAEE</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12_1.0.0.0_x86__dexenjeaeqnm6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12_dexenjeaeqnm6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12</RegisteredPackageID>
@@ -30,17 +30,41 @@
     <AppXManifest Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-04T01:21:12.665</Modified>
+      <Modified>2020-06-08T03:12:01.598</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\GBDD.UWP.exe">
       <PackagePath>entrypoint\GBDD.UWP.exe</PackagePath>
-      <Modified>2020-06-04T01:21:10.329</Modified>
+      <Modified>2020-06-08T03:11:59.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T09:16:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\sqlite-net-pcl\1.7.335\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2020-05-15T16:38:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\sqlitepclraw.bundle_green\2.0.3\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2020-05-01T04:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\sqlitepclraw.core\2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2020-05-01T04:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.3\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2020-04-07T09:14:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.3\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2020-05-01T04:35:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2018-09-18T09:38:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -68,7 +92,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\bin\Debug\netstandard2.0\GBDD.dll">
       <PackagePath>GBDD.dll</PackagePath>
-      <Modified>2020-06-04T01:21:03.670</Modified>
+      <Modified>2020-06-08T03:11:52.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -227,11 +251,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-04T01:21:10.182</Modified>
+      <Modified>2020-06-08T03:11:59.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-06-04T01:21:10.182</Modified>
+      <Modified>2020-06-08T03:11:59.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -247,11 +271,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-06-04T01:21:11.349</Modified>
+      <Modified>2020-06-08T01:08:16.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\Core\GBDD.UWP.exe">
       <PackagePath>GBDD.UWP.exe</PackagePath>
-      <Modified>2020-06-04T01:21:12.642</Modified>
+      <Modified>2020-06-08T03:12:01.575</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
