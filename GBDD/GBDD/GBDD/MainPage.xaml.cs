@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace GBDD
@@ -24,6 +19,7 @@ namespace GBDD
             base.OnAppearing();
 
             listView.ItemsSource = await App.Database.GetNotesAsync();
+            listView.SelectedItem = null;
         }
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
@@ -45,6 +41,7 @@ namespace GBDD
                 await App.Database.DeleteNoteAsync(prof);
                 listView.ItemsSource = await App.Database.GetNotesAsync();
             }
+            listView.SelectedItem = null;
         }
 
         async void RemoveItem(object sender, EventArgs e)

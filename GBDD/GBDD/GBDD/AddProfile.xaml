@@ -47,7 +47,7 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="45" />
+                                    <RowDefinition Height="40" />
                                 </Grid.RowDefinitions>
                                 <Label Grid.Column="0" Text="Date of registration of the document:" TextColor="Gray"/>
                                 <DatePicker Grid.Column="1" Date="{x:Binding date_of_registration_of_the_document_in_the_organization}" IsEnabled="{Binding Source={x:Reference SwitchCell}, Path=On}"/>

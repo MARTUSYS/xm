@@ -3,9 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GBDD"
              mc:Ignorable="d"
              x:Class="GBDD.MainPage"
              Title="Profiles">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:SelectProfTrigger x:Key="SelectProfTrigger" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+"
@@ -39,8 +46,8 @@
                                         <FormattedString>
                                             <Span Text="Phone: " FontSize="Micro"/>
                                             <Span Text="{Binding Phone}" FontSize="Micro"/>
-                                            <Span Text=", Name of company: " FontSize="Micro"/>
-                                            <Span Text="{Binding Name_of_company}" FontSize="Micro"/>
+                                            <Span Text=", Organization: " FontSize="Micro"/>
+                                            <Span Text="{Binding Organization}" FontSize="Micro"/>
                                         </FormattedString>
                                     </Label.FormattedText>
                                 </Label>
@@ -61,17 +68,60 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="45" />
             </Grid.RowDefinitions>
-            <Button Text="Edit" Clicked="RemoveItem"/>
+            <Button 
+                Text="Edit" 
+                Clicked="RemoveItem"
+                IsEnabled="False">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference listView},
+                                      Path=SelectedItem,
+                                      Converter={StaticResource SelectProfTrigger}}"
+                                  Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
             <Button 
                 Grid.Column="1"
                 Text="Delete"
                 Clicked="DeleteItem"
-                />
+                IsEnabled="False"
+                >
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference listView},
+                                      Path=SelectedItem,
+                                      Converter={StaticResource SelectProfTrigger}}"
+                                  Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
         </Grid>
+        
         <Button 
             Text="Form appeal"
             Clicked="ButtonItemCliced"
-            />
+            IsEnabled="False"
+            >
+            <Button.Triggers>
+                <MultiTrigger TargetType="Button">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Source={x:Reference listView},
+                                      Path=SelectedItem,
+                                      Converter={StaticResource SelectProfTrigger}}"
+                                  Value="true" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="IsEnabled" Value="True" />
+                </MultiTrigger>
+            </Button.Triggers>
+        </Button>
+        
     </StackLayout>
 
 
