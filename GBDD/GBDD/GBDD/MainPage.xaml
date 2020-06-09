@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="GBDD.MainPage"
              Title="Profiles">
-
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:SelectProfTrigger x:Key="SelectProfTrigger" />
@@ -44,8 +44,8 @@
                                 <Label>
                                     <Label.FormattedText>
                                         <FormattedString>
-                                            <Span Text="Phone: " FontSize="Micro"/>
-                                            <Span Text="{Binding Phone}" FontSize="Micro"/>
+                                            <Span Text="Email: " FontSize="Micro"/>
+                                            <Span Text="{Binding Email}" FontSize="Micro"/>
                                             <Span Text=", Organization: " FontSize="Micro"/>
                                             <Span Text="{Binding Organization}" FontSize="Micro"/>
                                         </FormattedString>

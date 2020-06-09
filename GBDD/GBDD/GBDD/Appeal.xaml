@@ -3,13 +3,109 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GBDD"
              mc:Ignorable="d"
-             x:Class="GBDD.Appeal">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="GBDD.Appeal"
+             Title="Appeal">
+    
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ProfMultiTriggerConverter x:Key="dataHasBeenEntered" />
+            <local:SelectProfTrigger x:Key="SelectProfTrigger" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+            <Editor x:Name="Editor"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                Keyboard="Text"
+                Text="{Binding Text}"
+                Placeholder="Enter appeal here"
+                IsReadOnly="False"
+                AutoSize="TextChanges"
+                BackgroundColor="LightSteelBlue"
+                />
+            <ListView x:Name="listView"
+                Grid.ColumnSpan="3"
+                Grid.Row="1"
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell 
+                            Text="{Binding Text}"
+                            Detail="{Binding Date}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Grid.Row="2"
+                Grid.Column="1"
+                Text="Delete" 
+                IsEnabled="False"
+                Clicked="ButtonDeleteClicked"
+                >
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference listView},
+                                      Path=SelectedItem,
+                                      Converter={StaticResource SelectProfTrigger}}"
+                                  Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Grid.Row="2"
+                Grid.Column="0"
+                Text="Select" 
+                IsEnabled="False"
+                Clicked="ButtonSelectClicked"
+                >
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference listView},
+                                      Path=SelectedItem,
+                                      Converter={StaticResource SelectProfTrigger}}"
+                                  Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Grid.Row="2"
+                Grid.Column="2"
+                Text="Add photos" 
+                IsEnabled="False"
+                Clicked="ButtonClicked"
+                >
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference Editor},
+                                      Path=Text.Length,
+                                      Converter={StaticResource dataHasBeenEntered}}"
+                                  Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
+        </Grid>
+
+
+    </StackLayout>
 </ContentPage>

@@ -70,7 +70,8 @@
 
             <Button Text="Save" 
                     Clicked="OnSaveButtonClicked"
-                    IsEnabled="False">
+                    IsEnabled="False"
+                    >
                 <Button.Triggers>
                     <MultiTrigger TargetType="Button">
                         <MultiTrigger.Conditions>

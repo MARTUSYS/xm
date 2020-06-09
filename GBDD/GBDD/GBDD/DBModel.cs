@@ -18,7 +18,7 @@ namespace GBDD
         public string Last_name { get; set; }
         public string First_name { get; set; }
         public string Patronymic { get; set; }
-        public Int64 Phone { get; set; }
+        public string Phone { get; set; }
         public string Email { get; set; }
         public string Event_location { get; set; }
 

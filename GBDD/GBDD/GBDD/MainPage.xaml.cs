@@ -62,10 +62,9 @@ namespace GBDD
             DBModel prof = listView.SelectedItem as DBModel;
             if (prof != null)
             {
-                await Navigation.PushAsync(new Appeal
-                {
-                    BindingContext = prof
-                });
+                AllData.PushDBModel(prof);
+                await Navigation.PushAsync(new Appeal());
+                
             }
         }
 
