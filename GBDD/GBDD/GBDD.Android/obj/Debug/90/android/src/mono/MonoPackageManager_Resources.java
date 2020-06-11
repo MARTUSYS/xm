@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"GBDD.Android.dll",
 		"FormsViewGroup.dll",
 		"GBDD.dll",
+		"Plugin.Media.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

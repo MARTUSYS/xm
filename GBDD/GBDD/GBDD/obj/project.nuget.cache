@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "15HIKSVfDswJPtqneCBn0CplwDTqHef4Ib40Qpa3UpjNPvs+jaeZlxdVNe0Z6pyCM1TqjdEh400VPn7x5ybZHg==",
+  "dgSpecHash": "fnUF8g0qc6ny6g7T36I/DtBtNJUdS581tggE73XYmiw8Gm11WFlIzyekoUfh54d9HnmTLvGSPiBk80m8d5/wUw==",
   "success": true,
   "projectFilePath": "E:\\Android\\Prod\\xamarin\\GBDD\\GBDD\\GBDD\\GBDD.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Max\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Max\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\xamarin.forms\\4.6.0.800\\xamarin.forms.4.6.0.800.nupkg.sha512"
   ],

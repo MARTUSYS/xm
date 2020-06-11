@@ -26,7 +26,7 @@ namespace GBDD
         {
             DBModel prof = new DBModel();
             prof.date_of_registration_of_the_document_in_the_organization = DateTime.UtcNow;
-            prof.First_name = "";
+            //prof.First_name = "";
             await Navigation.PushAsync(new AddProfile
             {
                 BindingContext = prof

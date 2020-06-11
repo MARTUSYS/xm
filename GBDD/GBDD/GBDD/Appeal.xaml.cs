@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -32,7 +28,7 @@ namespace GBDD
             AppealM.Text = Editor.Text;
             AppealM.Date = DateTime.UtcNow;
             AllData.PushAppealModel(AppealM);
-            // await Navigation.PushAsync(new Appeal());
+            await Navigation.PushAsync(new PhotoAddLib());
         }
 
         async void ButtonDeleteClicked(object sender, EventArgs e)

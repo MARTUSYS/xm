@@ -68,3 +68,6 @@ E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\e_sqlite3.dll
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\Plugin.Media.dll
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\Plugin.Media.pdb
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\obj\x86\Debug\Plugin.Media.pri.xml

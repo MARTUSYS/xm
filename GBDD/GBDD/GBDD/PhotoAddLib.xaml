@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GBDD"
+             mc:Ignorable="d"
+             x:Class="GBDD.PhotoAddLib"
+             Title="Add image">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:SelectProfTrigger x:Key="SelectProfTrigger" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listView"
+                      HasUnevenRows="true"
+                      ItemTapped="OnListViewItemSelected"
+                    >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Image Source="{Binding imag}" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="150" WidthRequest="150"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Grid.Column="1" Text="Add Photo" Clicked="PhotoClicked"/>
+                <Button Grid.Row="0" Grid.Column="0" Text="Take Photo" Clicked="TakePhotoClicked"/>
+
+                <Button x:Name="Delete" Grid.Row="1" Grid.Column="0" Text="Delete" Clicked="DeletePhotoClicked" IsEnabled="False"/>
+
+                <Button x:Name="File_appeal" Grid.Row="1" Grid.Column="1" Text="File appeal" Clicked="FileAppealTakePhotoClicked" IsEnabled="False"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -11,9 +11,10 @@ E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.dll
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\ref\GBDD.dll
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.pdb
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\Appeal.xaml.g.cs
-E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\AddingPhotos.xaml.g.cs
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\AddProfile.xaml.g.cs
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\All.xaml.g.cs
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\ProfileSelection.xaml.g.cs
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\PhotoAddLib.xaml.g.cs
+E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\Fullimage.xaml.g.cs
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\GBDD.csproj.CoreCompileInputs.cache
 E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\obj\Debug\netstandard2.0\XamlC.stamp

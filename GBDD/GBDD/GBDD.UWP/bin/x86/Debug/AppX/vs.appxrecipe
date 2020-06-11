@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C4A7A81BE87C521BE4286F7AA2E14D26F822F5E2C2C60A1093F5AB82BE92BAEE</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E11E8728A08001E3952B3379AFD12CB6977AC086EBD4C0CBD12C1F2BB9581A6D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12_1.0.0.0_x86__dexenjeaeqnm6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12_dexenjeaeqnm6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>9b1cf7af-01aa-4ca4-bfa8-b61d2ec2da12</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-08T09:21:23.426</Modified>
+      <Modified>2020-06-11T08:14:46.851</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\GBDD.UWP.exe">
       <PackagePath>entrypoint\GBDD.UWP.exe</PackagePath>
-      <Modified>2020-06-08T09:21:21.354</Modified>
+      <Modified>2020-06-11T08:14:44.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -70,6 +70,10 @@
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-29T16:58:38.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\xam.plugin.media\5.0.1\lib\uap10.0.16299\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+      <Modified>2020-04-01T08:52:02.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\xamarin.essentials\1.5.3.2\lib\uap10.0.16299\Xamarin.Essentials.dll">
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
       <Modified>2020-05-11T14:41:08.000</Modified>
@@ -92,7 +96,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD\bin\Debug\netstandard2.0\GBDD.dll">
       <PackagePath>GBDD.dll</PackagePath>
-      <Modified>2020-06-09T02:40:30.842</Modified>
+      <Modified>2020-06-11T08:24:52.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Max\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -251,11 +255,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-08T09:21:21.191</Modified>
+      <Modified>2020-06-11T08:14:44.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-06-08T09:21:21.192</Modified>
+      <Modified>2020-06-11T08:14:44.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -271,11 +275,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-06-08T01:08:16.429</Modified>
+      <Modified>2020-06-11T00:53:06.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Android\Prod\xamarin\GBDD\GBDD\GBDD.UWP\bin\x86\Debug\Core\GBDD.UWP.exe">
       <PackagePath>GBDD.UWP.exe</PackagePath>
-      <Modified>2020-06-08T09:21:23.406</Modified>
+      <Modified>2020-06-11T08:14:46.829</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
