@@ -67,34 +67,5 @@ namespace GBDD
                 
             }
         }
-
-        /*
-
-                            <TextCell Text="{Binding Last_name, StringFormat='{0}'}"
-                              Detail="{Binding First_name}" />
-
-        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem != null)
-            {
-                await Navigation.PushAsync(new AddProfile
-                {
-                    BindingContext = e.SelectedItem as DBModel
-                });
-            }
-        }
-        ItemSelected="OnListViewItemSelected"
-        */
-
-        /*
-            <StackLayout>
-        <!-- Place new controls here -->
-        <Button x:Name="Add" Text="Pereh" Clicked="Add_Clicked"/>
-    </StackLayout>
-        private async void Add_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new All());
-        }
-        */
     }
 }

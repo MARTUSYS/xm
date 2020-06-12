@@ -116,7 +116,10 @@ namespace GBDD
             }
             listView.SelectedItem = null;
             if (imageData.Count == 0)
+            {
                 File_appeal.IsEnabled = false;
+                Delete.IsEnabled = false;
+            }
         }
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -138,9 +141,12 @@ namespace GBDD
             }
         }
 
-        void FileAppealTakePhotoClicked(object sender, EventArgs e)
+        async void FileAppealTakePhotoClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushAsync(new All
+            {
+                BindingContext = AllData.GetIModelAll()
+            });
         }
     }
 }

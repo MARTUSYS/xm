@@ -1,13 +1,11 @@
 ﻿using System;
-using SQLite;
+using System.Collections.Generic;
+using System.Text;
 
 namespace GBDD
 {
-    public class DBModel
+    public class ModelAll
     {
-        [PrimaryKey, AutoIncrement]
-        public int ID { get; set; }
-
         public string Region { get; set; }
         public string Subdivision { get; set; }
         public string Position { get; set; }
@@ -28,5 +26,8 @@ namespace GBDD
         public Int64 Registered_Mail_Number { get; set; }
         public string DataNull { get; set; }
         public DateTime Date { get; set; }
+
+
+        public string Text { get; set; }
     }
 }

@@ -4,8 +4,84 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="GBDD.All">
-    <StackLayout>
+             x:Class="GBDD.All"
+             Title="Statement">
 
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="45" />
+        </Grid.RowDefinitions>
+        <TableView Grid.Row="0" Intent="Data" HasUnevenRows="True">
+            <TableView.Root>
+                <TableRoot>
+                    <TableSection>
+                        <TextCell Text="General information"/>
+                        <EntryCell Label="Last name" Text="{Binding Last_name}" IsEnabled="False"/>
+                        <EntryCell Label="First name" Text="{Binding First_name}" IsEnabled="False"/>
+                        <EntryCell Label="Patronymic" Text="{Binding Patronymic}" IsEnabled="False"/>
+                        <EntryCell Label="Email" Text="{Binding Email}" IsEnabled="False"/>
+                        <EntryCell Label="Phone" Text="{Binding Phone}" IsEnabled="False"/>
+                        <EntryCell Label="Event Location (Region)" Text="{Binding Event_location}" IsEnabled="False"/>
+
+                        <TextCell Text="Where it is addressed"/>
+                        <EntryCell Label="Region" Text="{Binding Region}" IsEnabled="False"/>
+                        <EntryCell Label="Subdivision" Text="{Binding Subdivision}" IsEnabled="False"/>
+                        <EntryCell Label="Position" Text="{Binding Position}" IsEnabled="False"/>
+                        <EntryCell Label="Full name" Text="{Binding Full_name}" IsEnabled="False"/>
+
+                        <TextCell Text="For organization"/>
+                        <SwitchCell Text="Organization" On="{Binding Organization}" IsEnabled="False"/>
+                        <EntryCell Label="Name of company" Text="{Binding Name_of_company}" IsEnabled="False"/>
+                        <EntryCell Label="Additional information" Text="{x:Binding Additional_information}" IsEnabled="False"/>
+                        <EntryCell Label="Outgoing №" Text="{x:Binding Outgoing_number}" IsEnabled="False"/>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40" />
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0" Text="Date of registration of the document:" TextColor="Gray"/>
+                                <DatePicker Grid.Column="1" Date="{x:Binding date_of_registration_of_the_document_in_the_organization}" IsEnabled="False"/>
+                            </Grid>
+                        </ViewCell>
+                        <EntryCell Label="Registered mail №" Text="{x:Binding Registered_Mail_Number}" IsEnabled="False"/>
+
+                        <TextCell Text="Appeal"/>
+                        <ViewCell>
+                            <Editor x:Name="Editor"
+                                Text="{Binding Text}"
+                                IsReadOnly="True"
+                                AutoSize="TextChanges"
+                                />
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView.Root>
+        </TableView>
+        <ListView Grid.Row="1"
+                x:Name="listView"
+                HasUnevenRows="true"
+                ItemSelected="OnCurrent"
+                VerticalOptions="StartAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Image Source="{Binding imag}" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100" WidthRequest="100"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Grid.Row="2" Text="Send request" 
+                    Clicked="OneRequestClicked"
+                    />
+    </Grid>
+
 </ContentPage>

@@ -16,7 +16,7 @@
 
 
     <StackLayout Margin="20">
-        <TableView Intent="Data">
+        <TableView Intent="Data" HasUnevenRows="True">
             <TableView.Root>
                 <TableRoot>
                     <TableSection>

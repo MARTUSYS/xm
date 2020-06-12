@@ -50,12 +50,13 @@ namespace GBDD
                 Editor.Text = Model.Text;
             }
         }
-
+        /*
         protected override bool OnBackButtonPressed()
         {
             AppealModel AppealM = new AppealModel();
             AllData.PushAppealModel(AppealM);
             return true;
         }
+        */
     }
 }

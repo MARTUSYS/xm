@@ -8,6 +8,5 @@ namespace GBDD
     public class ClassPhoto
     {
         public ImageSource imag { get; set; }
-        public ImageSource imag_new { get; set; }
     }
 }
