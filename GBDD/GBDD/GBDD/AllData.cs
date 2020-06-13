@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 
 namespace GBDD
 {
@@ -17,7 +15,7 @@ namespace GBDD
         static private DBModel prof = new DBModel();
         static private AppealModel AppealM = new AppealModel();
         static private ObservableCollection<ClassPhoto> imageData = new ObservableCollection<ClassPhoto>();
-        static private ModelAll Allfile = new ModelAll();
+        
 
 
         public static void PushDBModel(DBModel model)
@@ -45,6 +43,7 @@ namespace GBDD
 
         public static ModelAll GetIModelAll()
         {
+            ModelAll Allfile = new ModelAll();
             Allfile.Region = prof.Region;
             Allfile.Subdivision = prof.Subdivision;
             Allfile.Position = prof.Position;
@@ -65,8 +64,6 @@ namespace GBDD
 
             return Allfile;
         }
-
-
         public static void ClearModel()
         {
             DBModel prof_Clear = new DBModel();

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,6 +12,7 @@ namespace GBDD
         {
             InitializeComponent();
             listView.ItemsSource = AllData.GetImageModel();
+            listView.SelectedItem = null;
         }
 
         async void OnCurrent(object sender, SelectedItemChangedEventArgs e)
@@ -27,7 +24,7 @@ namespace GBDD
                     BindingContext = e.SelectedItem as ClassPhoto
                 });
             }
-            //listView.SelectedItem = null;
+            listView.SelectedItem = null;
         }
 
             async void OneRequestClicked(object sender, EventArgs e)
